@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/MyMaterialTheme"
+        android:id="@+id/appbarlayout">
+
+        <include
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- The main content view -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbarlayout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            android:text="剩餘時間："/>
+
+        <TextView
+            android:layout_below="@id/time_tv"
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pe_detail_title1"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_below="@id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="35sp"
+            android:text="TEXT" />
+
+        <Button
+            android:id="@+id/choice_btn"
+            android:layout_below="@id/item_title"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="進行選擇"
+            android:textSize="20sp"/>
+
+        <ScrollView
+            android:fadeScrollbars="false"
+            android:layout_below="@id/choice_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/result_btn">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配方表："
+                    android:textSize="20sp"
+                    android:id="@+id/title2"/>
+
+                <HorizontalScrollView
+                    android:layout_below="@id/title2"
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TableLayout
+                        android:stretchColumns="0,1,2"
+                        android:id="@+id/tablelayout"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_margin="2dip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_marginRight="2dip"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_600"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_white_1000"
+                                android:text="成分" />
+
+                            <TextView
+                                android:layout_marginRight="2dip"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_600"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_white_1000"
+                                android:text="調製方法" />
+                            <TextView
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_600"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_white_1000"
+                                android:text="裝飾物" />
+
+                            <TextView
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_600"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_white_1000"
+                                android:text="杯器皿" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_margin="2dip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/ingredient_des"
+                                android:layout_marginRight="2dip"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_100"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_black_1000"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/modulationfunction_des"
+                                android:layout_marginRight="2dip"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_100"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_black_1000"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/decoration_des"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_100"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_black_1000"
+                                android:text="" />
+
+                            <TextView
+                                android:id="@+id/cup_des"
+                                android:padding="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@color/md_blue_100"
+                                android:textSize="20sp"
+                                android:textColor="@color/md_black_1000"
+                                android:text="" />
+                        </TableRow>
+                    </TableLayout>
+
+                </HorizontalScrollView>
+
+                <TextView
+                    android:layout_below="@id/horizontalScrollView"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/you_choice_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你選擇的答案："
+                    android:textSize="20sp"/>
+
+                <RelativeLayout
+                    android:layout_below="@+id/you_choice_title"
+                    android:id="@+id/listview_relativelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <GridView
+                        android:id="@+id/userans_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:gravity="center"
+                        android:horizontalSpacing="2dp"
+                        android:isScrollContainer="false"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="20dp"/>
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/empty_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未選擇材料。"
+                        style="@android:style/TextAppearance.Large" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="檢查"
+            android:id="@+id/result_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

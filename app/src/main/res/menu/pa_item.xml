@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/test_item"
+        android:icon="@drawable/exam"
+        app:showAsAction="always|withText"
+        android:orderInCategory="10"
+        android:title="@string/btn_exam" />
+
+    <!--<item-->
+        <!--android:id="@+id/exam_appliance"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_appliance" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_cup"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_cup" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_material"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_material" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_fresh"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_fresh" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_burden"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_burden" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_brew"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_brew" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_smoothies"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_smoothies" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_expresso"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_expresso" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_operator_station"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_operator_station" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/exam_complex"-->
+        <!--android:icon="@drawable/exam"-->
+        <!--app:showAsAction="never"-->
+        <!--android:orderInCategory="10"-->
+        <!--android:title="@string/pa_menu_exam_complex" />-->
+</menu>

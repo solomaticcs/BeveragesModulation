@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+    </style>
+
+    <!-- 各API通用的基底theme -->
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat">
+        <!-- 不需要 title -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 不需要 ActionBar 了,因為改用Toolbar -->
+        <item name="android:windowActionBar">false</item>
+
+        <item name="android:activatedBackgroundIndicator">@color/md_blue_50</item>
+        <!-- 主要顏色 -->
+        <item name="colorPrimary">@color/color_primary</item>
+        <!-- 狀態欄背景色 -->
+        <item name="colorPrimaryDark">@color/color_primaryDark</item>
+        <item name="colorAccent">@color/color_accent</item>
+        <!-- 其他可用項目 colorControlNormal, colorControlActivated, colorControlHighlight, colorSwitchThumbNormal -->
+    </style>
+
+    <style name="customSpinner" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/md_black_1000</item>
+    </style>
+</resources>

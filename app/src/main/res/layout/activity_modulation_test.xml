@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/MyMaterialTheme"
+        android:id="@+id/appbarlayout">
+
+        <include
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        android:layout_below="@id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/question"
+            android:layout_centerHorizontal="true" />
+
+        <TableLayout
+            android:id="@+id/tablelayout"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/question"
+            android:stretchColumns="0,1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <Button
+                    android:id="@+id/button1"
+                    android:tag="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="直接注入法"/>
+                <Button
+                    android:id="@+id/button4"
+                    android:tag="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="攪拌法"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/button2"
+                    android:tag="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="電動攪拌法"/>
+                <Button
+                    android:id="@+id/button5"
+                    android:tag="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="水果切盤"/>
+            </TableRow>
+            <TableRow>
+                <Button
+                    android:id="@+id/button3"
+                    android:tag="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="搖盪法"/>
+                <Button
+                    android:id="@+id/button6"
+                    android:tag="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="義式咖啡機"/>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/mu_userchoice"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/tablelayout"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/mu_userchoice"/>
+
+        <TextView
+            android:id="@+id/userans_tv"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/mu_userchoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/mu_correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userans_tv"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="@string/mu_correct"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/mu_correct"
+            android:id="@+id/correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一題"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

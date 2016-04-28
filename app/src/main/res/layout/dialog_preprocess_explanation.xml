@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:paddingTop="15dp"
+        android:id="@+id/preprocess_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前置流程(6分鐘)"
+        android:textSize="30sp"
+        android:textColor="@color/md_blue_700"
+        android:layout_centerHorizontal="true"/>
+
+    <ScrollView
+        android:paddingTop="20dp"
+        android:layout_below="@id/preprocess_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:id="@+id/scrollView2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/content"
+                android:textColor="@color/md_black_1000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_below="@id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/know_btn"
+                android:text="知道了"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">丙級飲調輔助學習APP系統</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btn_next">Next</string>
+    <string name="btn_prev">Prev</string>
+    <string name="btn_exam">測驗</string>
+
+    <!-- ===============側邊選單START============== -->
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <!-- drawer 清單 -->
+    <string-array name="drawer_list_name">
+        <item>主頁</item>
+        <item>學科測驗</item>
+        <item>題庫瀏覽</item>
+        <item>模擬試題</item>
+        <item>術科測驗</item>
+
+        <item>公共材料區</item>
+        <item>調製法</item>
+        <item>飲調題組</item>
+        <item>前置操作練習</item>
+        <item>調製流程</item>
+        <item>善後工作</item>
+        <item>應考錦囊</item>
+
+        <item>報考資訊</item>
+        <item>應檢須知</item>
+        <item>簡章購買、報名方式</item>
+    </string-array>
+
+    <!-- drawer 是否為標題列 0:否 1:是 -->
+    <integer-array name="drawer_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
+    <!-- ===============側邊選單END============== -->
+
+    <!-- ===============飲品配方START============== -->
+    <string-array name="dr_list_name">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>B7</item>
+        <item>B8</item>
+        <item>B9</item>
+        <item>B10</item>
+        <item>B11</item>
+        <item>B12</item>
+        <item>C13</item>
+        <item>C14</item>
+        <item>C15</item>
+        <item>C16</item>
+        <item>C17</item>
+        <item>C18</item>
+    </string-array>
+
+    <string name="dr_group">組別：%1$s</string>
+    <string name="dr_ingredient">成分：</string>
+    <string name="dr_modulation_method">調製法：</string>
+    <string name="dr_decorations">裝飾物：</string>
+    <string name="dr_cup_utensils">杯器皿：</string>
+    <string name="dr_des01_title">
+        <![CDATA[
+            請選出<b><font color="red">%1$s</font></b>所需之材料
+        ]]>
+    </string>
+    <string name="dr_des02_title">您選擇的答案</string>
+    <string name="dr_des03_title">正確解答</string>
+    <string name="dr_userans_des">您尚未選擇材料。</string>
+    <string name="dr_ans_des">選擇材料後才顯示正確答案。</string>
+    <!-- ===============飲品配方END============== -->
+
+    <!-- ===============題組瀏覽START============== -->
+    <string-array name="tb_list_name">
+        <!--<item>1~100題</item>-->
+        <!--<item>101~200題</item>-->
+        <!--<item>201~300題</item>-->
+        <!--<item>301~400題</item>-->
+        <!--<item>401~500題</item>-->
+        <!--<item>501~596題</item>-->
+        <item>吧檯清潔</item>
+        <item>作業準備</item>
+        <item>飲料調製</item>
+        <item>善後作業</item>
+        <item>職業道德</item>
+        <item>安全與衛生</item>
+    </string-array>
+    <string name="tb_title">題庫：%1$s</string>
+    <string name="tb_showans_btn">顯示正確答案</string>
+    <string name="tb_hiddenans_btn">隱藏正確答案</string>
+    <!-- ===============題組瀏覽END============== -->
+
+    <!-- ===============模擬測驗START============== -->
+    <string name="tm_text">毎一階段須通過兩次模擬測驗才能晉級(通過標準需不低於80分)</string>
+    <string name="tm_exam_start">開始測驗</string>
+    <string name="tm_exam_re">重新測驗</string>
+    <string-array name="tm_list_name">
+        <!--<item>第一關  範圍1~100題 隨機25題</item>-->
+        <!--<item>第二關  範圍101~200題 隨機25題</item>-->
+        <!--<item>第三關  範圍201~300題 隨機25題</item>-->
+        <!--<item>第四關  範圍301~400題 隨機25題</item>-->
+        <!--<item>第五關  範圍401~500題 隨機25題</item>-->
+        <!--<item>第六關  範圍501~596題 隨機25題</item>-->
+        <!--<item>最後一關 範圍1~596題 隨機80題</item>-->
+        <item>第一關 吧檯清潔 隨機25題</item>
+        <item>第二關 作業準備 隨機25題</item>
+        <item>第三關 飲料調製 隨機25題</item>
+        <item>第四關 善後作業 隨機25題</item>
+        <item>第五關 職業道德 隨機25題</item>
+        <item>第六關 安全與衛生 隨機25題</item>
+        <item>最後一關 全部範圍 隨機80題</item>
+    </string-array>
+    <string name="tm_limittime_text">剩餘時間：%1$s:%2$s</string>
+    <string name="tm_userans_text">您的答案：%1$s</string>
+    <string name="tm_correctans_text">正確答案：%1$s</string>
+    <string name="tm_result_message_pass">恭喜您以%1$s分\n通過第%2$s關測驗。</string>
+    <string name="tm_result_message_nopass">分數：%1$s，第%2$s關的分數低於80分，很抱歉您未通過本階段，請回題庫重新溫習。</string>
+    <string name="tm_timeout_message_alpass">您早就過關了，您的分數：%1$s</string>
+    <string name="tm_timeout_message_nopass">因為超過測驗規定時間所以不予計分，您的分數為：%1$s</string>
+    <string name="tm_remind_title">提醒您</string>
+    <string name="tm_remind_message">尚未填答的題目：第%1$s題</string>
+    <!-- ===============模擬測驗END============== -->
+
+    <!-- ===============公共材料區START============== -->
+    <string name="pa_menu_exam_appliance">機具、器具測驗</string>
+    <string name="pa_menu_exam_cup">杯皿測驗</string>
+    <string name="pa_menu_exam_material">器料測驗</string>
+    <string name="pa_menu_exam_fresh">生鮮測驗</string>
+    <string name="pa_menu_exam_burden">配料測驗</string>
+    <string name="pa_menu_exam_brew">沖泡測驗</string>
+    <string name="pa_menu_exam_smoothies">糖漿、果露測驗</string>
+    <string name="pa_menu_exam_expresso">義式咖啡機</string>
+    <string name="pa_menu_exam_other">其他</string>
+    <string name="pa_menu_exam_operator_station">操作台</string>
+    <string name="pa_menu_exam_complex">綜合測驗</string>
+    <string name="pa_result_text">
+        <![CDATA[
+        %1$s<br/>答案是<b><font color="%2$s">%3$s</font></b>
+        ]]>
+    </string>
+    <string name="pa_result_finishtest">
+        <![CDATA[
+        <b><font color="yellow">%1$s</font></b>全部作答完畢
+        ]]>
+    </string>
+    <string name="pa_result_congratulation_score">
+        <![CDATA[
+        您的分數：<b><font color="#1e90ff">%1$s</font></b>分<br/>
+        恭喜通過<b><font color="yellow">%2$s</font></b>
+        ]]>
+    </string>
+    <string name="pa_result_fail_score">
+        <![CDATA[
+        您的分數：<b><font color="red">%1$s</font></b>分<br/>
+        <b><font color="yellow">%2$s</font></b>闖關失敗
+        ]]>
+    </string>
+    <string name="pa_result_insufficient">
+        <![CDATA[
+        此關卡題數不足<b><font color="red">無法測驗</font></b>
+        ]]>
+    </string>
+    <!-- ===============公共材料區END============== -->
+
+    <!-- ===============調製法START============== -->
+    <string name="mu_menu_exam">調製測驗</string>
+    <string name="mu_question">
+        <![CDATA[
+        請問<b><font color="red">%1$s</font></b>是使用什麼調製法？
+        ]]>
+    </string>
+    <string name="mu_userchoice">您選擇的答案</string>
+    <string name="mu_correct">正確解答</string>
+    <!-- ===============調製法END============== -->
+
+    <!-- ===============前置操作練習START============== -->
+    <string name="pe_des_text">共有18個題組，每個題組有6杯飲料，隨機出題每次出現，每杯限時6分鐘，每各題組要通過至少5杯才算通過。</string>
+    <string name="pe_exam_start">開始測驗</string>
+    <string name="pe_exam_re">重新測驗</string>
+    <string-array name="pe_list_name">
+        <item>A1</item>
+        <item>A2</item>
+        <item>A3</item>
+        <item>A4</item>
+        <item>A5</item>
+        <item>A6</item>
+        <item>B7</item>
+        <item>B8</item>
+        <item>B9</item>
+        <item>B10</item>
+        <item>B11</item>
+        <item>B12</item>
+        <item>C13</item>
+        <item>C14</item>
+        <item>C15</item>
+        <item>C16</item>
+        <item>C17</item>
+        <item>C18</item>
+    </string-array>
+    <string name="pe_detail_title1">請依題目所須至公共材料區拿取材料</string>
+    <string name="pe_detail_check_message">正確：%1$s，拿錯：%2$s，沒拿：%3$s</string>
+    <string name="pe_place_title">請將材料放置於指定區域</string>
+    <!--0: 材料區 1: 裝飾物區 2:義式咖啡機 3:工作區 4:夾層 5:成品區 6:器皿區-->
+    <string-array name="pe_sp_listname">
+        <item>材料區</item>
+        <item>裝飾物區</item>
+        <item>義式咖啡機</item>
+        <item>工作區</item>
+        <item>夾層</item>
+        <item>成品區</item>
+        <item>器皿區</item>
+    </string-array>
+    <string name="pe_empty_list_text">沒有資料。</string>
+    <string name="pe_result_congratulation">
+        <![CDATA[
+        恭喜完成<b><font color="#1e90ff">%1$s</font></b>
+        ]]>
+    </string>
+    <string name="pe_place_check_message">正確：%1$s，錯誤：%2$s</string>
+    <!-- ===============前置操作練習END============== -->
+    
+    <!-- ===============應檢須知START============== -->
+    <string name="notice_title">應考錦囊</string>
+    <string name="notice_text">
+        <![CDATA[
+        <p>熱桔茶使用器具最多，容易少拿、拿錯，導致無法在限定時間內完成，所以必須特別注意所需器具與材料之內容以避免之。</p>
+        <p>奇異之吻為直接注入法之飄浮法，果露與檸檬汁攪拌後，倒入柳橙汁呈漂浮狀</p>
+        <p>搖盪法必須注意放入冰塊的量，避免茶湯過多或冷卻不足</p>
+        <p>搖盪法必須讓搖盪杯表面成結霜狀</p>
+        <p>冰熱奶泡，成品皆要能刮出一平匙奶泡以上。</p>
+        <p>水果切盤須依成品圖卡擺飾</p>
+        <p>前置作業時間，可操作壓汁動作，須於時間內完成</p>
+        <p>依配方順序調製飲品，蛋蜜汁系列除外，蛋黃須最後加入以免凝結</p>
+        ]]>
+    </string>
+    <!-- ===============應檢須知END============== -->
+
+    <!-- ===============調製流程START==============-->
+    <string name="mp_menu_exam">調製流程練習</string>
+    <string name="mp_des_text">請由下列幾個選項，設計合適的調製流程。</string>
+    <!-- ===============調製流程END==============-->
+
+    <!-- ===============簡章購買、報名方式START================-->
+    <string name="pb_title1"><b><i>全國技術士技能檢定(白色信封袋)</i></b></string>
+    <string name="pb_content1">一、報名表購買,販售期間至全國之全家便利商店、萊爾富便利商店、OK超商購買；或發展署技能檢定中心技能檢定服務窗口、臺北市職能發展學院、各縣市簡章販售點或洽技專校院入學測驗中心技能檢定專案室。,二、報名方式  報檢人擇一報名：, (一)團體報名：15人以上得採團體報名，報檢人填寫報名書表，並將檢附資料統一繳交團體承辦人，副表蓋上團體章，由承辦人確認報檢人數與總報名費用後，於各梯次報名受理期間，將所有報檢人報名表件統一彙寄至技專校院入學測驗中心技能檢定專案室。 ,(二)個別報名： 報檢人填寫報名書表並檢附資格證件影本，檢附報名費收據正本，連同報名資格證件一起寄出。 亦可採網路報名。</string>
+    <string name="pb_title2"><b><i>即測即評及發證(黃色信封袋)</i></b></string>
+    <string name="pb_content2">一、簡章及報名書表販售地點：, 至全國之全家便利商店、萊爾富便利商店、ok 超商或即測即評及發證承辦單位等通 路購買，或洽有限責任台灣省台中區機關聯合員工消費合作社(04–22542837 轉 10、傳真 04–22544084)。, 二、報名地點及方式：, 至即測即評及發證各承辦單位，以現場報名為原則，親自或可委託他人代為報名。訂有名額限制之職類，1 人至多可代理 10 人報名，惟承辦單位另有規定者，從其規定(請隨時至承辦單位網站查詢)。</string>
+    <!-- ===============簡章購買、報名方式END================-->
+</resources>

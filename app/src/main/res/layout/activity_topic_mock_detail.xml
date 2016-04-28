@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:theme="@style/MyMaterialTheme"
+        android:id="@+id/appbarlayout">
+
+        <include
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            layout="@layout/toolbar" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <!-- The main content view -->
+
+    <RelativeLayout
+        android:layout_below="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/tm_limittime_text"
+            android:id="@+id/time_tv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_next"
+            android:id="@+id/result_btn"
+            android:layout_below="@+id/time_tv"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_prev"
+            android:id="@+id/prev_btn"
+            android:layout_below="@+id/time_tv"
+            android:layout_toStartOf="@id/result_btn"
+            tools:ignore="RtlCompat" />
+
+        <ScrollView
+            android:layout_below="@id/prev_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Large Text"
+                    android:id="@+id/question"
+                    android:layout_marginTop="10dp" />
+
+                <RadioGroup
+                    android:layout_below="@id/question"
+                    android:id="@+id/rgroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/ans1_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案1"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/ans2_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案2"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/ans3_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案3"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/ans4_rb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="答案4"
+                        android:textSize="20sp"
+                        android:layout_marginTop="15dp" />
+                </RadioGroup>
+
+                <Button
+                    android:layout_below="@id/rgroup"
+                    android:id="@+id/submit_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="確定"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/userans_tv"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/submit_btn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <TextView
+                    android:id="@+id/correctans_tv"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:textSize="20sp"
+                    android:layout_below="@+id/userans_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <!-- 提醒畫面 -->
+    <RelativeLayout
+        android:id="@+id/level_remind_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#CC000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/level_remind_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tm_remind_title"
+            android:textColor="@color/md_white_1000"
+            android:textSize="30sp"/>
+
+        <TextView
+            android:id="@+id/level_remind_text"
+            android:layout_below="@id/level_remind_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/md_white_1000"
+            android:text="@string/tm_remind_message"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/level_remind_cancel_btn"
+            android:layout_below="@id/level_remind_text"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="知道了"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+    <!-- 關卡結果頁面 -->
+    <!--android:clickable="true" 可以確保不會點擊到此介面外的東西-->
+    <RelativeLayout
+        android:id="@+id/level_result_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#CC000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- 使用者名字 -->
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/level_result_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_yellow_900"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/level_result_username"
+                android:id="@+id/level_result_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TEST"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/md_white_1000"
+                android:textSize="30sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/ll1"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/level_result_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- 回題庫練習 -->
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/level_result_back_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="回題庫練習"
+                    android:textSize="20sp" />
+                <!-- 重新測驗 or 回上一頁 -->
+                <Button
+                    android:id="@+id/level_result_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <!-- 取消 -->
+                <Button
+                    android:id="@+id/level_result_cancel_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

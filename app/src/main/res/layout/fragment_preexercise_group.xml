@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="@string/pe_des_text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_below="@id/textView"
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <Button
+            android:id="@+id/random_topic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="隨機出題" />
+        <Button
+            android:id="@+id/mf_topic_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="調製法選擇練習" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/preexercise_group_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearlayout"/>
+
+</RelativeLayout>

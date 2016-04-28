@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="公共材料區"
+        android:id="@+id/tm_text"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+    <ScrollView
+        android:layout_below="@+id/tm_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:background="@drawable/round_button"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_white_1000"
+                    android:text="其他"
+                    android:textSize="20sp"
+                    android:id="@+id/left_button1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:padding="10dp"
+                    android:background="@drawable/rectangle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/md_white_1000"
+                    android:text="操作桌"
+                    android:textSize="20sp"
+                    android:id="@+id/left_button2"
+                    android:layout_below="@+id/left_button1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="義式咖啡機"
+                    android:id="@+id/right_button1"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="機具、器具"
+                    android:id="@+id/right_button2"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@+id/right_button1"
+                    android:layout_alignParentRight="true" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="杯皿類"
+                    android:id="@+id/right_button3"
+                    android:layout_below="@+id/right_button2"
+                    android:layout_alignParentRight="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="器材"
+                    android:id="@+id/right_button4"
+                    android:layout_below="@+id/right_button3"
+                    android:layout_alignParentRight="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="生鮮類"
+                    android:id="@+id/right_button5"
+                    android:layout_below="@+id/right_button4"
+                    android:layout_alignParentRight="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配料類"
+                    android:id="@+id/right_button6"
+                    android:layout_below="@+id/right_button5"
+                    android:layout_alignParentRight="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="沖泡類"
+                    android:id="@+id/right_button7"
+                    android:layout_below="@+id/right_button6"
+                    android:layout_alignParentRight="true" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="材料-糖漿(果露)"
+                    android:id="@+id/right_button8"
+                    android:layout_below="@+id/right_button7"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
