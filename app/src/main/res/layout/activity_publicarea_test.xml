@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.design.widget.AppBarLayout android:layout_height="wrap_content"
+    <com.google.android.material.appbar.AppBarLayout android:layout_height="wrap_content"
         android:layout_width="match_parent" android:theme="@style/MyMaterialTheme"
         android:id="@+id/appbarlayout">
 
@@ -19,7 +19,7 @@
             android:layout_alignParentTop="true"
             layout="@layout/toolbar" />
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
     <!-- The main content view -->
 
